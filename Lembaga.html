@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        margin-left: 50px;
+        margin-top: 20px;
+      }
+
+      .logo {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+      }
+
+      .title h1 {
+        margin: 0;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+      }
+
+      .title h2 {
+        margin: 0;
+        font-style: sans-serif;
+        font-size: smaller;
+        font-weight: lighter;
+      }
+
+      .search-form {
+        display: flex;
+        align-items: center;
+        padding: 4px 8px;
+        border-radius: 4px;
+        margin-left: auto;
+        margin-right: 40px;
+      }
+
+      .search-form input[type='text'] {
+        color: #000;
+        padding: 4px 8px;
+        border-radius: 4px;
+        outline: none;
+      }
+      .search-form a {
+        font-size: larger;
+      }
+
+      .search-form button[type='submit'] {
+        background-color: #ffc107;
+        color: #000;
+        padding: 4px 8px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 4px;
+      }
+
+      .search-form button[type='submit']:hover {
+        background-color: #e6b100;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .navbar a:hover {
+        background: #ddd;
+        color: black;
+      }
+      .linknav {
+        margin-left: 27em;
+      }
+      .navbar {
+        overflow: hidden;
+        background-color: #351c75;
+        margin-bottom: 20px;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        text-decoration: none;
+        position: relative;
+      }
+
+      .navbar a:hover {
+        background: #ddd;
+        color: black;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .navbar a:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown-arrow::after {
+        content: '\25BC';
+        font-size: 10px;
+        margin-left: 5px;
+      }
+      .container2 {
+        display: flex;
+      }
+      .columnn1 {
+        margin-left: 5em;
+      }
+      .columnn2 {
+        margin-left: 13em;
+      }
+      .columnn3 {
+        flex-direction: column;
+        margin-left: 15em;
+      }
+      .columnn3 li {
+        padding-top: 10px;
+        list-style: none;
+      }
+      .container a {
+        font-family: sans-serif;
+        font-weight: bold;
+      }
+      .title1 h1 {
+        padding: 30px;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+      }
+      .title1 hr {
+        width: 50%;
+        height: 10px;
+        border: 0;
+        box-shadow: 0 10px 10px -10px #8c8c8c inset;
+      }
+      .ikon {
+        margin-right: 10px;
+      }
+      .ikon i {
+        width: 20px;
+      }
+      .search-form a {
+        margin-right: 15px;
+      }
+      .fakultas ul {
+        margin-left: 22em;
+        margin-top: 30px;
+      }
+      .fakultas {
+        margin-right: 0px;
+      }
+      .fakultas img {
+        margin-left: 25em;
+        margin-top: 40px;
+        border-radius: 2%;
+      }
+      .fakultas button {
+        color: grey;
+      }
+      .fakultas h1 {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-family: sans-serif;
+      }
+      .fakultas p {
+        margin-left: 13em;
+        margin-right: 13em;
+        font-weight: lighter;
+        opacity: 0.8;
+      }
+      .fakultas button:hover {
+        color: #8c8c8c;
+      }
+
+      .fakultas hr {
+        height: 10px;
+        border: 0;
+        box-shadow: 0 10px 3px -10px #8c8c8c inset;
+      }
+      .footer1 {
+        margin-top: 3em;
+        height: 20em;
+        background-color: #351c75;
+        color: #fff;
+        padding: 20px;
+      }
+      .footer1 h2 {
+        font-weight: bolder;
+        font-size: 25px;
+      }
+      .footer1 p {
+        font-size: smaller;
+        opacity: 0.7;
+      }
+      .footer2 {
+        height: 40px;
+        color: #fff;
+        text-align: center;
+      }
+      .footer2 p {
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="img/logodedl.png" alt="Logo" class="logo" />
+      <div class="title">
+        <h1>Institut Teknologi Del</h1>
+        <h2>MarTuhan, Marroha, Marbisuk</h2>
+      </div>
+
+      <form class="search-form">
+        <a href="Dashboard.html">Home</a>
+        <a href="Pengumuman.html">Pengumuman</a>
+        <div class="ikon">
+          <i class="fab fa-mail-forward"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+        <input type="text" placeholder="Pencarian" />
+        <button type="submit">Cari</button>
+      </form>
+    </header>
+    <nav class="navbar">
+      <div class="linknav">
+        <a href="#">Tentang Del <span class="dropdown-arrow"></span></a>
+        <a href="ProgramPendidikan.html">Program Pendidikan <span class="dropdown-arrow"></span></a>
+        <div class="dropdown-content">
+          <a href="#">Sejarah</a>
+          <a href="#">Visi dan Misi</a>
+        </div>
+        <a href="#">Sivitas <span class="dropdown-arrow"></span></a>
+        <div class="dropdown-content">
+          <a href="#">Workshop</a>
+          <a href="#">Seminar</a>
+        </div>
+        <a href="Fasilitas.html">Fasilitas <span class="dropdown-arrow"></span></a>
+        <div class="dropdown-content">
+          <a href="#">Terbaru</a>
+          <a href="#">Arsip</a>
+        </div>
+        <a href="#">Kontak <span class="dropdown-arrow"></span></a>
+      </div>
+    </nav>
+    <div class="title1">
+      <h1>LEMBAGA</h1>
+      <hr />
+    </div>
+    <br />
+    <div class="fakultas">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true" style="background-color: #351c75">LPPM</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" style="background-color: #351c75">
+            UPT PP-ESTEM
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false" style="background-color: #351c75">
+            Pusat Modal Manusia (PMM)
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false" style="background-color: #351c75">
+            Sistem Penjaminan Mutu (SPM)
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false" style="background-color: #351c75">Koperasi</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <h1>
+            LPPM Institut Teknologi Del
+            <hr style="width: 40%" />
+          </h1>
+
+          <p>
+            Lembaga Penelitian dan Pengabdian Masyarakat (LPPM) adalah lembaga yang berada di bawah Institut Teknologi Del yang mempunyai tugas untuk mengkoordinasikan, memantau, dan menilai pelaksanaan kegiatan penelitian dan pengabdian
+            kepada masyarakat yang diselenggarakan oleh LPPM, GBK, Program Studi, kelompok dan perorangan. LPPM mengusahakan pengendalian dalam hal penggunaan sumber daya, serta mengusahakan pengembangan dan peningkatan mutu penelitian dan
+            pengabdian kepada masyarakat.
+            <br /><br />
+            Visi LPPM IT Del:
+            <br /><br />
+            Menjadi lembaga yang unggul dan mandiri dalam pelaksanaan penelitian, khususnya kepada pengembangan dan pemanfaatan teknologi informasi dan komunikasi, dan pengabdian kepada masyarakat.
+            <br /><br />
+            Misi LPPM IT Del adalah sebagai berikut :
+            <br /><br />
+            – Mengembangkan sumber daya pendidikan dan pengajaran di kampus dan masyarakat umumnya melalui penelitian dan pemanfaatan hasil penelitian.<br />
+            – Menghasilkan penelitian dan kajian-kajian akademik berkualitas yang memberikan dampak pada pengembangan institusi, baik untuk tingkat lokal, nasional, maupun internasional.<br />
+            – Mendiseminasikan hasil-hasil penelitian melalui seminar, lokakarya, dan media lainnya sehingga mencapai sasaran seluas-luasnya.<br />
+            – Mengembangkan kegiatan pengabdian masyarakat yang profesional, berbasis ilmu pengetahuan dan teknologi, khususnya teknologi informasi dan komunikasi.<br />
+            – Meningkatkan kemampuan dan peran serta dosen dan mahasiswa dalam penelitian dan pemberdayaan pada masyarakat.<br />
+            <br /><br />
+            Fungsi dan Tugas LPPM IT Del
+            <br /><br />
+            Bidang Penelitian
+            <br /><br />
+            A. Internal
+            <br /><br />
+            – Mengkoordinir penelitian di GBK, prodi dan penelitian oleh kelompok atau perorangan.<br />
+            – Menyebarkan informasi yang berkaitan dengan penelitian, misalnya informasi dari Dirjen Dikti atau Kementerian Riset dan Teknologi.<br />
+            – Membantu meningkatkan kemampuan meneliti para dosen IT Del.<br />
+            – Membantu meningkatkan mutu penelitian dengan mengadakan pelatihan dan kegiatan ilmiah untuk diseminasi dan pembahasan hasil penelitian.<br />
+            – Membantu menanggulangi masalah-masalah dalam pelaksanaan penelitian di GBK, prodi dan penelitian oleh kelompok atau perorangan.<br />
+            – Membantu dosen dalam publikasi hasil penelitian.<br />
+            – Membantu dosen dengan pengembangan kebijakan insentif untuk kegiatan penelitian.<br />
+            <br /><br />
+            B. Eksternal
+            <br /><br />
+            – Mendapatkan informasi yang berkaitan dengan penelitian, misalnya dari Direktorat Jendral Pendidikan Tinggi – DepDikBud (informasi tentang Hibah Bersaing, dan lain-lain dana penelitian yang terbuka bagi PTS). Juga dengan
+            instansi pemerintah, non-pemerintah, dan donor internasional lainnya, misalnya informasi insentif riset dari Kementerian Riset dan Teknologi.<br />
+            – Mengembangkan jejaring penelitian bersama dengan Politeknik yang ada di Indonesia.<br />
+            – Mengembangkan jaringan kerjasama penelitian dengan pemerintah daerah dan berbagai Perguruan Tinggi di Sumatera Utara, Indonesia dan manca Negara.<br />
+            <br /><br />
+            Bidang Pengabdian Masyarakat
+            <br /><br />
+            A. Internal
+            <br /><br />
+            – Membantu segenap civitas akademik IT Del dalam pelaksanaan kegiatan pengabdian masyarakat agar mendapatkan sasaran yang tepat dan berkesinambungan.<br />
+            – Melaksanakan kegiatan-kegiatan yang mempunyai dampak sosial dan ekonomi kepada masyarakat sekitar kampus IT Del.<br />
+            – Mengembangkan kemampuan mahasiswa dan alumni dalam pengembangan usaha.<br />
+            – Membuat program-program yang bertujuan untuk pengembangan dan penguatan wilayah/daerah sekitar kampus IT Del.<br />
+            <br /><br />
+            B. Eksternal
+            <br /><br />
+            – Mengembangkan kerjasama dengan masyarakat atau kelompok-kelompok tertentu di sekitar dataran tinggi Toba.<br />
+            – Mengembangkan program-program pelatihan dan pendidikan (kursus) bagi peningkatan kapasitas masyarakat Toba Samosir dan sekitarnya.<br />
+            – Mengembangkan kerjasama dengan institusi-institusi seperti pemda sekitar IT Del, perusahaan-perusahaan swasta, DIKTI, dan lembaga donor.<br />
+          </p>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+      </div>
+    </div>
+    <br />
+    <br /><br /><br />
+
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">Berita Terkini</h5>
+        <p class="card-text">Klik tombol berikut untuk membaca berita seputar IT Del</p>
+        <a href="#" class="btn btn-primary" style="background-color: #351c75">Berita Terkini</a>
+      </div>
+    </div>
+    <footer class="footer1">
+      <div class="container2">
+        <div class="columnn1">
+          <h2>Contact Us</h2>
+          <p>
+            Institut Teknologi Del <br />Jl. Sisingamangaraja, Sitoluama Laguboti, Samosir<br />
+            Sumatera Utara, Indonesia <br />Kode Pos: 22381 <br />Telp: +62 632 331234 <br />Fax: +62 632 331116 <br /><br />Website: http://www.del.ac.id <br />Email: info@del.ac.id <br />Karir: karir@del.ac.id
+          </p>
+        </div>
+        <div class="columnn2">
+          <h2>Latest Tweets</h2>
+          <p>No Twitter Messages</p>
+          <li><i class="fab fa-twitter"></i>&nbsp;&nbsp;Twitter</li>
+        </div>
+        <div class="columnn3">
+          <h2>Find Us On</h2>
+          <ul>
+            <li><i class="fab fa-facebook"></i>&nbsp;&nbsp;Facebook</li>
+            <li><i class="fab fa-twitter"></i>&nbsp;&nbsp;Twitter</li>
+            <li><i class="fab fa-youtube"></i>&nbsp;&nbsp;Youtube</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer2">
+      <p>Copyright SDI-IT Del © 2023 Institut Teknologi Del. All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

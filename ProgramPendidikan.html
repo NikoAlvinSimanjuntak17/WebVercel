@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        margin-left: 50px;
+        margin-top: 20px;
+      }
+
+      .logo {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+      }
+
+      .title h1 {
+        margin: 0;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+      }
+
+      .title h2 {
+        margin: 0;
+        font-style: sans-serif;
+        font-size: smaller;
+        font-weight: lighter;
+      }
+
+      .search-form {
+        display: flex;
+        align-items: center;
+        padding: 4px 8px;
+        border-radius: 4px;
+        margin-left: auto;
+        margin-right: 40px;
+      }
+
+      .search-form input[type='text'] {
+        color: #000;
+        padding: 4px 8px;
+        border-radius: 4px;
+        outline: none;
+      }
+
+      .search-form button[type='submit'] {
+        background-color: #ffc107;
+        color: #000;
+        padding: 4px 8px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 4px;
+      }
+
+      .search-form button[type='submit']:hover {
+        background-color: #e6b100;
+      }
+      .search-form a {
+        font-size: larger;
+      }
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .navbar a:hover {
+        background: #ddd;
+        color: black;
+      }
+      .linknav {
+        margin-left: 27em;
+      }
+      .navbar {
+        overflow: hidden;
+        background-color: #351c75;
+        margin-bottom: 20px;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        text-decoration: none;
+        position: relative;
+      }
+
+      .navbar a:hover {
+        background: #ddd;
+        color: black;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .navbar a:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown-arrow::after {
+        content: '\25BC';
+        font-size: 10px;
+        margin-left: 5px;
+      }
+      .container2 {
+        display: flex;
+      }
+      .columnn1 {
+        margin-left: 5em;
+      }
+      .columnn2 {
+        margin-left: 13em;
+      }
+      .columnn3 {
+        flex-direction: column;
+        margin-left: 15em;
+      }
+      .columnn3 li {
+        padding-top: 10px;
+        list-style: none;
+      }
+      .container a {
+        font-family: sans-serif;
+        font-weight: bold;
+      }
+      .title1 h1 {
+        padding: 30px;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+      }
+      .title1 hr {
+        width: 50%;
+        height: 10px;
+        border: 0;
+        box-shadow: 0 10px 10px -10px #8c8c8c inset;
+      }
+      .ikon {
+        margin-right: 10px;
+      }
+      .ikon i {
+        width: 20px;
+      }
+      .search-form a {
+        margin-right: 15px;
+      }
+      .fakultas ul {
+        margin-left: 22em;
+        margin-top: 30px;
+      }
+      .fakultas img {
+        margin-left: 25em;
+        margin-top: 40px;
+        border-radius: 2%;
+      }
+      .fakultas button {
+        color: grey;
+      }
+      .fakultas h1 {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-family: sans-serif;
+      }
+      .fakultas p {
+        margin-left: 13em;
+        margin-right: 13em;
+        font-weight: lighter;
+        opacity: 0.8;
+      }
+      .fakultas button:hover {
+        color: #8c8c8c;
+      }
+      .fakultas button::after {
+        color: #8c8c8c;
+      }
+      .fakultas hr {
+        height: 10px;
+        border: 0;
+        box-shadow: 0 10px 3px -10px #8c8c8c inset;
+      }
+      .footer1 {
+        margin-top: 3em;
+        height: 20em;
+        background-color: #351c75;
+        color: #fff;
+        padding: 20px;
+      }
+      .footer1 h2 {
+        font-weight: bolder;
+        font-size: 25px;
+      }
+      .footer1 p {
+        font-size: smaller;
+        opacity: 0.7;
+      }
+      .footer2 {
+        height: 40px;
+        color: #fff;
+        text-align: center;
+      }
+      .footer2 p {
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="img/logodedl.png" alt="Logo" class="logo" />
+      <div class="title">
+        <h1>Institut Teknologi Del</h1>
+        <h2>MarTuhan, Marroha, Marbisuk</h2>
+      </div>
+
+      <form class="search-form">
+        <a href="Dashboard.html">Home</a>
+        <a href="Pengumuman.html">Pengumuman</a>
+        <div class="ikon">
+          <i class="fab fa-mail-forward"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+        <input type="text" placeholder="Pencarian" />
+        <button type="submit">Cari</button>
+      </form>
+    </header>
+    <nav class="navbar">
+      <div class="linknav">
+        <a href="#">Tentang Del <span class="dropdown-arrow"></span></a>
+        <a href="ProgramPendidikan.html">Program Pendidikan <span class="dropdown-arrow"></span></a>
+        <div class="dropdown-content">
+          <a href="#">Sejarah</a>
+          <a href="#">Visi dan Misi</a>
+        </div>
+        <a href="#">Sivitas <span class="dropdown-arrow"></span></a>
+        <div class="dropdown-content">
+          <a href="#">Workshop</a>
+          <a href="#">Seminar</a>
+        </div>
+        <a href="Fasilitas.html">Fasilitas <span class="dropdown-arrow"></span></a>
+        <div class="dropdown-content">
+          <a href="#">Terbaru</a>
+          <a href="#">Arsip</a>
+        </div>
+        <a href="#">Kontak <span class="dropdown-arrow"></span></a>
+      </div>
+    </nav>
+    <div class="title1">
+      <h1>PROGRAM STUDI</h1>
+      <hr />
+    </div>
+    <br />
+    <div class="fakultas">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false" style="background-color: #351c75">
+            Fakultas Informatika & Teknik Elektro
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" style="background-color: #351c75">
+            Fakultas Vokasi
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false" style="background-color: #351c75">
+            Fakultas Bioteknologi
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact2-tab" data-bs-toggle="pill" data-bs-target="#pills-contact2" type="button" role="tab" aria-controls="pills-contact2" aria-selected="false" style="background-color: #351c75">
+            Fakultas Teknik Industri
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <img src="img/fite.jpg" />
+          <h1>
+            Fakultas Informatika & Teknik Elektro
+            <hr style="width: 40%" />
+          </h1>
+
+          <p>
+            Fakultas Teknik Informatika dan Elektro (FITE) IT Del berdiri pada tahun 2013 seiring dengan perubahan Politeknik Informatika Del (PI Del) menjadi IT Del. <br /><br />
+            Visi dan Misi FITE: <br /><br />
+            Visi: <br />Menjadi Fakultas Pembelajar yang unggul di bidang Informatika dan Teknik Elektro pada tahun 2018 di tingkat nasional. <br /><br />Misi: <br />1. Menyelenggarakan dan mengembangkan proses pendidikan di bidang
+            Informatika dan Teknik Elektro yang unggul, berkesinambungan, dan bermanfaat bagi masyarakat. <br />2. Mengembangkan, menciptakan, dan menyebarkan ilmu pengetahuan dan teknologi secara khusus di bidang Informatika dan Teknik
+            Elektro. <br />3. Meningkatkan peranan Fakultas agar mampu menjadi pembaru kemampuan, keterampilan pilihan rujukan, dan pengembangan rekayasa karya masyarakat, khususnya dalam bidang Informatika dan Teknik Elektro.<br />
+            4. Meningkatkan peran nyata Fakultas kepada masyarakat melalui penerapan Tridarma Perguruan Tinggi secara khusus di bidang Informatika dan Teknik Elektro<br /><br />Saat ini FITE memiliki 3 (tiga) Program Studi sebagai
+            berikut:<br /><br />
+            <a href="#" class="btn btn-primary" style="background-color: #351c75">1. Sarjana/Strata 1 (S1) Program Studi Informatika</a><br />
+            <br />
+            <a href="#" class="btn btn-primary" style="background-color: #351c75">2. Sarjana/Strata 1 (S1) Sistem Informasi</a><br />
+            <br />
+            <a href="#" class="btn btn-primary" style="background-color: #351c75">3. Sarjana/Strata 1 (S1) Teknik Elektro </a><br /><br />
+            Ketiga program studi Sarjana mulai beroperasi sejak tahun 2014.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <img src="img/vokasi.jpg" />
+          <h1>
+            Fakultas Vokasi
+            <hr style="width: 40%" />
+          </h1>
+
+          <p>
+            Pendidikan vokasi merupakan jenjang pendidikan pertama di Institut Teknologi Del sejak berdiri pada tahun 2001 (dahulu bernama Politeknik Informatika Del). Vokasi merupakan pendidikan tinggi dengan fokus pada praktik kerja yang
+            dapat menunjang keahlian di bidang studi tertentu. Program vokasi bertujuan mempersiapkan lulusannya menjadi tenaga yang siap kerja dan mampu bersaing secara global di Dunia Usaha dan Dunia Industri (DUDI).
+            <br /><br />
+            Fakultas Vokasi Institut Teknologi Del Di Institut Teknologi Del memiliki 3 program studi pada jenjang Diploma 3 (D3) dan Diploma 4 (D4):<br />
+            <br />
+            <a href="#" class="btn btn-primary" style="background-color: #351c75">1. D4 (Sarjana Terapan) Teknologi Rekayasa Perangkat Lunak</a><br />
+            <br />
+            <a href="#" class="btn btn-primary" style="background-color: #351c75">2. D3 Teknologi Informasi</a><br />
+            <br />
+            <a href="#" class="btn btn-primary" style="background-color: #351c75">3. D3 Teknologi Komputer</a><br /><br />
+            Ketiga program studi vokasi di IT Del telah terakreditasi B dari BAN-PT. Beberapa keunggulan dari pendidikan vokasi adalah: belajar di program studi yang spesifik, belajar sesuai minat dan profesi yang diinginkan, siap kerja
+            karena dibekali kemampuan praktik yang tinggi, sehingga lulusan pendidikan vokasi banyak dibutuhkan perusahaan.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <img src="img/bio.jpg" />
+          <h1>
+            Fakultas Bioteknologi
+            <hr style="width: 40%" />
+          </h1>
+
+          <p>
+            VISI:<br />
+            Menjadikan program studi Sarjana Teknik Bioproses menjadi program studi yang unggul secara nasional dan internasional dalam bidang pendidikan, penelitian, pengembangan dan penerapan ilmu dan teknologi, serta pengabdian kepada
+            masyarakat.
+            <br /><br />
+            MISI:<br />
+            • Menyelenggarakan dan mengembangkan proses pendidikan yang unggul, berkesinambungan dan bermanfaat bagi masyarakat.<br />
+            • Mengembangkan, menciptakan, dan menyebarkan ilmu pengetahuan dan teknologi khususnya Teknik Bioproses.<br />
+            • Meningkatkan peranan program studi adar mampu menjadi pembaharu dalam kemampuan, keterampilan pilihan rujukan, dan pengembangan rekayasa karya masyarakat, khususnya dalam bidang ilmu pengetahuan dan teknologi khususnya Teknik
+            Bioproses.<br />
+            • Meningkatkan peran nyata kepada masyarakat melalui penerapan tridarma perguruan tinggi.<br />
+            • Menjadikan program studi Teknik Bioproses sebagai program studi yang memiliki sistem pengelolaan yang baik, efisien, dan produktif.<br />
+            <br />
+            TARGET LULUSAN:<br />
+            • Memiliki kompetensi mampu merancang, menganalisis, mengoperasikan, mengendalikan proses-proses di industry, dan mengevaluasi profitabilitas pendirian sistem produksi, khususnya industri yang menerapkan bioproses.<br />
+            • Mampu menerapkan pengetahuannya di bidang-bidang lain yang penanganannya betumpu pada bioproses seperti: masalah limbah dan polusi lingkungan, operasi-operasi pendukung di bidang kedokteran, maupun sebagai tenaga peneliti.<br />
+            • Mampu berkomunikasi yang efektif.<br /><br />
+            Fakultas ini hanya memiliki satu program studi yaitu:<br /><br />
+            <a href="#" class="btn btn-primary" style="background-color: #351c75">Program Studi S1 Teknik Bioproses</a><br />
+            <br />
+          </p>
+        </div>
+        <div class="tab-pane fade" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact2-tab">
+          <img src="img/fti.jpg" />
+          <h1>
+            Fakultas Teknologi Industri
+            <hr style="width: 40%" />
+          </h1>
+
+          <p>
+            Manajemen Rekayasa (Engineering Management) adalah penggabungan dari keilmuan teknik/rekayasa (engineering) dengan ilmu manajemen yang diaplikasikan untuk menyelesaikan persoalan-persoalan dalam suatu sistem kompleks. Aspek
+            keilmuan teknik (engineering) dari Manajemen Rekayasa terlihat melalui penerapan matematika dan ilmu pengetahuan alam yang diperoleh melalui pembelajaran, pengalaman, dan praktek empiris untuk menemukan cara-cara yang optimal
+            dalam memanfaatkan material dan sumber daya lain dalam mengembangkan teknologi. Aspek keilmuan manajemen dari Manajemen Rekayasa muncul dalam penerapan ilmu-ilmu pendukung keputusan yang dapat diaplikasikan dalam
+            aktivitas-aktivitas pengembangan organisasi dalam mencapai tujuannya, yang diperoleh melalui pembelajaran dan praktek empiris dalam ilmu perilaku organisasi, analisa finansial, manajemen sumber daya manusia, dan analisa
+            keputusan.<br /><br />
+            Kompetensi<br /><br />
+
+            Beberapa kompetensi Sarjana Manajemen Rekayasa IT Del yang adalah:<br />
+            1. Kemampuan merancang sistem manajemen dalam perencanaan dan pelaksanaan kegiatan kerekayasaan.<br />
+            2. Kemampuan menerapkan prinsip dan fungsi manajemen dalam mengalokasikan, mengarahkan, dan mengendalikan sumberdaya yang terkait dengan pengembangan dan penerapan teknologi dalam sistem usaha.<br />
+            3. Kemampuan menyusun analisis kelayakan finansial untuk usaha berbasis teknologi dan proyeksi kemampulabaan serta melakukan analisis sensitivitas.<br />
+            4. Kemampuan beradaptasi terhadap perubahan bisnis dan pasar dan menentukan rencana bisnis yang sesuai dengan dinamika pasar.<br />
+            5. Kemampuan bekerja dalam tim dan keterampilan berorganisasi yang baik.<br />
+            6. Kemampuan melakukan koordinasi dan negosiasi dengan seluruh pemangku kepentingan.<br /><br />
+
+            Prospek<br /><br />
+
+            Dalam skala nasional kita melihat pertumbuhan ekonomi nasional yang terus meningkat. Situasi ini tentu membutuhkan inovator-inovator yang diharapkan mampu menciptakan produk-produk yang inovatif yang dapat memenuhi kebutuhan
+            pasar nasional. Pertumbuhan ekonomi ini juga akan menginduksi pertumbuhan sektor-sektor produksi, dimana sektor-sektor ini akan membutuhkan insinyur dan manajer yang akan menjalankan, mengoptimalisasikan dan mengembangkan
+            usahanya. Sarjana Manajemen Rekayasa IT Del sangat memiliki kompetensi yang dibutuhkan untuk mengisi peluang ini.
+            <br />
+            Dalam skala regional, kita melihat pasar bebas ASEAN (MEA) sebagai peluang bagi Sarjana Manajemen Rekayasa IT Del untuk berperan serta mengisi kebutuhan professional di kawasan ASEAN. Kemampuan dasar keilmuan dan soft skill
+            disertai kefasihan berbahasa Inggris yang baik adalah modal besar bagi para lulusan dalam memanfaatkan peluang ini. Hal yang sama juga berlaku untuk peluang-peluang dalam skala global seperti AIC, APEC, WTO, AFTA, dan lainnya
+            yang mensyaratkan manusia bersumberdaya mumpuni dalam bidang sains dan teknologi.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br /><br /><br />
+
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">Berita Terkini</h5>
+        <p class="card-text">Klik tombol berikut untuk membaca berita seputar IT Del</p>
+        <a href="#" class="btn btn-primary" style="background-color: #351c75">Berita Terkini</a>
+      </div>
+    </div>
+    <footer class="footer1">
+      <div class="container2">
+        <div class="columnn1">
+          <h2>Contact Us</h2>
+          <p>
+            Institut Teknologi Del <br />Jl. Sisingamangaraja, Sitoluama Laguboti, Samosir<br />
+            Sumatera Utara, Indonesia <br />Kode Pos: 22381 <br />Telp: +62 632 331234 <br />Fax: +62 632 331116 <br /><br />Website: http://www.del.ac.id <br />Email: info@del.ac.id <br />Karir: karir@del.ac.id
+          </p>
+        </div>
+        <div class="columnn2">
+          <h2>Latest Tweets</h2>
+          <p>No Twitter Messages</p>
+          <li><i class="fab fa-twitter"></i>&nbsp;&nbsp;Twitter</li>
+        </div>
+        <div class="columnn3">
+          <h2>Find Us On</h2>
+          <ul>
+            <li><i class="fab fa-facebook"></i>&nbsp;&nbsp;Facebook</li>
+            <li><i class="fab fa-twitter"></i>&nbsp;&nbsp;Twitter</li>
+            <li><i class="fab fa-youtube"></i>&nbsp;&nbsp;Youtube</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer2">
+      <p>Copyright SDI-IT Del © 2023 Institut Teknologi Del. All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

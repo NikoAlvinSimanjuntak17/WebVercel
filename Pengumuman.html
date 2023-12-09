@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        margin-left: 50px;
+        margin-top: 20px;
+      }
+
+      .logo {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+      }
+
+      .title h1 {
+        margin: 0;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+      }
+
+      .title h2 {
+        margin: 0;
+        font-style: sans-serif;
+        font-size: smaller;
+        font-weight: lighter;
+      }
+
+      .search-form {
+        display: flex;
+        align-items: center;
+        padding: 4px 8px;
+        border-radius: 4px;
+        margin-left: auto;
+        margin-right: 40px;
+      }
+
+      .search-form input[type='text'] {
+        color: #000;
+        padding: 4px 8px;
+        border-radius: 4px;
+        outline: none;
+      }
+
+      .search-form button[type='submit'] {
+        background-color: #ffc107;
+        color: #000;
+        padding: 4px 8px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 4px;
+      }
+
+      .search-form button[type='submit']:hover {
+        background-color: #e6b100;
+      }
+      .search-form a {
+        font-size: larger;
+      }
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .navbar a:hover {
+        background: #ddd;
+        color: black;
+      }
+      .linknav {
+        margin-left: 27em;
+      }
+      .navbar {
+        overflow: hidden;
+        background-color: #351c75;
+        margin-bottom: 20px;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        text-decoration: none;
+        position: relative;
+      }
+
+      .navbar a:hover {
+        background: #ddd;
+        color: black;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .navbar a:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown-arrow::after {
+        content: '\25BC';
+        font-size: 10px;
+        margin-left: 5px;
+      }
+      .container2 {
+        display: flex;
+      }
+      .columnn1 {
+        margin-left: 5em;
+      }
+      .columnn2 {
+        margin-left: 13em;
+      }
+      .columnn3 {
+        flex-direction: column;
+        margin-left: 15em;
+      }
+      .columnn3 li {
+        padding-top: 10px;
+        list-style: none;
+      }
+      .container {
+        margin-top: 45px;
+        display: flex;
+      }
+      .container .card {
+        margin-right: 40px;
+      }
+      .column1 {
+        flex-direction: column;
+      }
+      .column2 {
+        flex-direction: column;
+      }
+      .cardimg img {
+        width: 12.5em;
+        height: 12.5em;
+        padding: 10px;
+      }
+      .title1 h1 {
+        padding: 30px;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+      }
+      .title1 hr {
+        width: 50%;
+        height: 10px;
+        border: 0;
+        box-shadow: 0 10px 10px -10px #8c8c8c inset;
+      }
+      .ikon {
+        margin-right: 10px;
+      }
+      .ikon i {
+        width: 20px;
+      }
+      .search-form a {
+        margin-right: 15px;
+      }
+      .pagination {
+        margin-left: 20em;
+      }
+      .footer1 {
+        margin-top: 3em;
+        height: 20em;
+        background-color: #351c75;
+        color: #fff;
+        padding: 20px;
+      }
+      .footer1 h2 {
+        font-weight: bolder;
+        font-size: 25px;
+      }
+      .footer1 p {
+        font-size: smaller;
+        opacity: 0.7;
+      }
+      .footer2 {
+        height: 40px;
+        color: #fff;
+        text-align: center;
+      }
+      .footer2 p {
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="img/logodedl.png" alt="Logo" class="logo" />
+      <div class="title">
+        <h1>Institut Teknologi Del</h1>
+        <h2>MarTuhan, Marroha, Marbisuk</h2>
+      </div>
+
+      <form class="search-form">
+        <a href="Dashboard.html">Home</a>
+        <a href="Pengumuman.html">Pengumuman</a>
+        <div class="ikon">
+          <i class="fab fa-mail-forward"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+        <input type="text" placeholder="Pencarian" />
+        <button type="submit">Cari</button>
+      </form>
+    </header>
+    <nav class="navbar">
+      <div class="linknav">
+        <a href="#">Tentang Del <span class="dropdown-arrow"></span></a>
+        <a href="ProgramPendidikan.html">Program Pendidikan <span class="dropdown-arrow"></span></a>
+        <div class="dropdown-content">
+          <a href="#">Sejarah</a>
+          <a href="#">Visi dan Misi</a>
+        </div>
+        <a href="#">Sivitas <span class="dropdown-arrow"></span></a>
+        <div class="dropdown-content">
+          <a href="#">Workshop</a>
+          <a href="#">Seminar</a>
+        </div>
+        <a href="Fasilitas.html">Fasilitas <span class="dropdown-arrow"></span></a>
+        <div class="dropdown-content">
+          <a href="#">Terbaru</a>
+          <a href="#">Arsip</a>
+        </div>
+        <a href="#">Kontak <span class="dropdown-arrow"></span></a>
+      </div>
+    </nav>
+    <div class="title1">
+      <h1>PENGUMUMAN</h1>
+      <hr />
+    </div>
+    <br />
+    <div class="container">
+      <div class="column1">
+        <div class="card mb-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="cardimg col-md-4">
+              <img src="img/wisuda2.jpg" class="rounded-start" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold">Wisuda 398 Lulusan Institut Teknologi Del</h5>
+                <p class="card-text" style="font-size: small">Pada Hari Sabtu 23 September 2023, Institut Teknologi Del melaksanakan Wisuda untuk 398 Mahasiswa Sarjana dan Diploma.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="cardimg col-md-4">
+              <img src="img/itdel.jpg" class="rounded-start" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold">Pengukuhan 483 Mahasiswa IT Del Angkatan XXIII dan Dies Natalis ke XXII</h5>
+                <p class="card-text" style="font-size: small">Sitoluama, 22 September 2023 Institut Teknologi Del menyelenggarakan Acara Pengukuhan Mahasiswa Baru Angkatan XXIII dan Dies Natalis ke XXII.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="cardimg col-md-4">
+              <img src="img/job.png" class="rounded-start" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold">Job Fair Institut Teknologi Del di Pekan Raya Sumatera Utara (PRSU) 2023</h5>
+                <p class="card-text" style="font-size: small">Dinas Ketenagakerjaan Provinsi Sumatera Utara kini bekerja sama dengan beberapa perusahaan dan institut yang menyediakan lowongan pekerjaan.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column2">
+        <div class="card mb-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="cardimg col-md-4">
+              <img src="img/pmb.png" class="rounded-start" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold">Informasi PMB Jalur Sertifikat UTBK 2023/2024 & Jadwal Pelaksanaan Kegiatan</h5>
+                <p class="card-text" style="font-size: small">Sertifikat UTBK adalah salah satu jalur penerimaan mahasiswa baru yang diselenggarakan oleh Institut Teknologi Del (IT Del).</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="cardimg col-md-4">
+              <img src="img/prosedur.png" class="rounded-start" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold">Prosedur Pelaksanaan Tes Akademik Jalur USM3 IT Del Tahun Akademik 2023/2024</h5>
+                <p class="card-text" style="font-size: small">
+                  Penerimaan mahasiswa baru jalur ujian saringan masuk 3 telah dibuka secara onsite dan online. Silahkan baca informasi yang sudah diberikan dibawah dan sesuaikan dengan lokasi yang tertera.
+                </p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="cardimg col-md-4">
+              <img src="img/usm-2.png" class="rounded-start" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold">Informasi PMB Jalur Ujian Saring Masuk 2 (USM 2) 2023 & Jadwal Pelaksanaan Kegiatan</h5>
+                <p class="card-text" style="font-size: small">Ujian Saring Masuk (USM) adalah salah satu jalur penerimaan mahasiswa baru yang diselenggarakan oleh Institut Teknologi Del (IT Del).</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <nav class="pagination" aria-label="...">
+      <ul class="pagination">
+        <li class="page-item disabled">
+          <span class="page-link">Previous</span>
+        </li>
+        <li class="page-item"><a class="page-link" href="#" style="color: #351c75">1</a></li>
+        <li class="page-item active" aria-current="page">
+          <span class="page-link" style="background-color: #351c75">2</span>
+        </li>
+        <li class="page-item"><a class="page-link" href="#" style="color: #351c75">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" style="color: #351c75">Next</a>
+        </li>
+      </ul>
+    </nav>
+    <br /><br /><br />
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">Berita Terkini</h5>
+        <p class="card-text">Klik tombol berikut untuk membaca berita seputar IT Del</p>
+        <a href="#" class="btn btn-primary" style="background-color: #351c75">Berita Terkini</a>
+      </div>
+    </div>
+    <footer class="footer1">
+      <div class="container2">
+        <div class="columnn1">
+          <h2>Contact Us</h2>
+          <p>
+            Institut Teknologi Del <br />Jl. Sisingamangaraja, Sitoluama Laguboti, Samosir<br />
+            Sumatera Utara, Indonesia <br />Kode Pos: 22381 <br />Telp: +62 632 331234 <br />Fax: +62 632 331116 <br /><br />Website: http://www.del.ac.id <br />Email: info@del.ac.id <br />Karir: karir@del.ac.id
+          </p>
+        </div>
+        <div class="columnn2">
+          <h2>Latest Tweets</h2>
+          <p>No Twitter Messages</p>
+          <li><i class="fab fa-twitter"></i>&nbsp;&nbsp;Twitter</li>
+        </div>
+        <div class="columnn3">
+          <h2>Find Us On</h2>
+          <ul>
+            <li><i class="fab fa-facebook"></i>&nbsp;&nbsp;Facebook</li>
+            <li><i class="fab fa-twitter"></i>&nbsp;&nbsp;Twitter</li>
+            <li><i class="fab fa-youtube"></i>&nbsp;&nbsp;Youtube</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer2">
+      <p>Copyright SDI-IT Del © 2023 Institut Teknologi Del. All Rights Reserved</p>
+    </footer>
+    <script src="home.js"></script>
+  </body>
+</html>

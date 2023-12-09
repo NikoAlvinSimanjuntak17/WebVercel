@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        margin-left: 50px;
+        margin-top: 20px;
+      }
+
+      .logo {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+      }
+
+      .title h1 {
+        margin: 0;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+      }
+
+      .title h2 {
+        margin: 0;
+        font-style: sans-serif;
+        font-size: smaller;
+        font-weight: lighter;
+      }
+
+      .search-form {
+        display: flex;
+        align-items: center;
+        padding: 4px 8px;
+        border-radius: 4px;
+        margin-left: auto;
+        margin-right: 40px;
+      }
+
+      .search-form input[type='text'] {
+        color: #000;
+        padding: 4px 8px;
+        border-radius: 4px;
+        outline: none;
+      }
+
+      .search-form button[type='submit'] {
+        background-color: #ffc107;
+        color: #000;
+        padding: 4px 8px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 4px;
+      }
+
+      .search-form button[type='submit']:hover {
+        background-color: #e6b100;
+      }
+      .search-form a {
+        font-size: larger;
+      }
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .navbar a:hover {
+        background: #ddd;
+        color: black;
+      }
+      .linknav {
+        margin-left: 27em;
+      }
+      .navbar {
+        overflow: hidden;
+        background-color: #351c75;
+        margin-bottom: 20px;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        text-decoration: none;
+        position: relative;
+      }
+
+      .navbar a:hover {
+        background: #ddd;
+        color: black;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .navbar a:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown-arrow::after {
+        content: '\25BC';
+        font-size: 10px;
+        margin-left: 5px;
+      }
+      .container {
+        display: flex;
+      }
+      .container2 {
+        display: flex;
+      }
+      .container3 {
+        display: flex;
+      }
+      .columnn1 {
+        flex-direction: column;
+        margin-left: 5em;
+      }
+      .columnn2 {
+        flex-direction: column;
+        margin-left: 13em;
+      }
+      .columnn3 {
+        flex-direction: column;
+        margin-left: 15em;
+      }
+      .columnn3 li {
+        padding-top: 10px;
+        list-style: none;
+      }
+
+      .column1 {
+        flex-direction: column;
+        margin-left: 20px;
+      }
+
+      .field1 {
+        width: 18em;
+        height: 2.5em;
+        border-width: 5px;
+        margin-right: 20px;
+      }
+      .field1 img {
+        width: 50px;
+        height: 45px;
+        padding-left: 15px;
+      }
+      .field2 {
+        width: 18em;
+        height: 50em;
+        border-width: 5px;
+        margin-right: 20px;
+        margin-top: 20px;
+      }
+      .field2 legend {
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: larger;
+      }
+      .field2 img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 17em;
+        height: 17em;
+      }
+      .pengumuman1 a {
+        font-weight: bold;
+      }
+      .field3 {
+        width: 18em;
+        height: 20em;
+        border-width: 5px;
+        margin-right: 20px;
+        margin-top: 20px;
+      }
+      .field3 legend {
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: larger;
+      }
+
+      .field3 a {
+        padding-top: 20px;
+        font-size: larger;
+      }
+      .banpt img {
+        margin-top: 30px;
+        width: 19em;
+        height: 20em;
+      }
+      .column2 {
+        flex-direction: column;
+      }
+      .columnn2 li {
+        list-style: none;
+      }
+      .slide {
+        display: none;
+      }
+
+      img {
+        width: 1130px;
+        height: 500px;
+      }
+      .slider-container {
+        position: relative;
+      }
+
+      .slide figcaption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        width: 1110px;
+        height: 180px;
+        padding: 10px;
+        text-align: left;
+      }
+      figcaption h2 {
+        color: rgb(200, 200, 41);
+      }
+      figcaption h2 {
+        opacity: 0.9;
+      }
+
+      .fade {
+        animation: fade 9.7s ease-in-out infinite;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.6;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .berita {
+        margin-top: 40px;
+        width: 1095px;
+        height: 66.3em;
+        border-width: 5px;
+      }
+      .berita legend {
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: larger;
+      }
+      .columns1 {
+        flex-direction: column;
+      }
+      .columns2 {
+        flex-direction: column;
+        margin-top: 60px;
+        margin-left: 15px;
+      }
+      .columns2 a {
+        font-weight: bold;
+      }
+      .columns2 p {
+        font-weight: lighter;
+        font-size: smaller;
+      }
+      .container3 img {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        width: 16em;
+        height: 11em;
+      }
+      .ikon {
+        margin-right: 10px;
+      }
+      .ikon i {
+        width: 20px;
+      }
+      .search-form a {
+        margin-right: 15px;
+      }
+      .more {
+        margin-top: 10px;
+        margin-left: 14em;
+      }
+      .footer1 {
+        margin-top: 3em;
+        height: 20em;
+        background-color: #351c75;
+        color: #fff;
+        padding: 20px;
+      }
+      .footer1 h2 {
+        font-weight: bolder;
+        font-size: 25px;
+      }
+      .footer1 p {
+        font-size: smaller;
+        opacity: 0.7;
+      }
+      .footer2 {
+        height: 40px;
+        color: #fff;
+        text-align: center;
+      }
+      .footer2 p {
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="img/logodedl.png" alt="Logo" class="logo" />
+      <div class="title">
+        <h1>Institut Teknologi Del</h1>
+        <h2>MarTuhan, Marroha, Marbisuk</h2>
+      </div>
+
+      <form class="search-form">
+        <a href="Dashboard.html">Home</a>
+        <a href="Pengumuman.html">Pengumuman</a>
+
+        <div class="ikon">
+          <i class="fab fa-mail-forward"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+        <input type="text" placeholder="Pencarian" />
+        <button type="submit">Cari</button>
+      </form>
+    </header>
+    <nav class="navbar">
+      <div class="linknav">
+        <a href="#">Tentang Del <span class="dropdown-arrow"></span></a>
+        <a href="ProgramPendidikan.html">Program Pendidikan <span class="dropdown-arrow"></span></a>
+        <div class="dropdown-content">
+          <a href="#">Sejarah</a>
+          <a href="#">Visi dan Misi</a>
+        </div>
+        <a href="#">Sivitas <span class="dropdown-arrow"></span></a>
+        <div class="dropdown-content">
+          <a href="#">Workshop</a>
+          <a href="#">Seminar</a>
+        </div>
+        <a href="Fasilitas.html">Fasilitas <span class="dropdown-arrow"></span></a>
+        <div class="dropdown-content">
+          <a href="#">Terbaru</a>
+          <a href="#">Arsip</a>
+        </div>
+        <a href="#">Kontak <span class="dropdown-arrow"></span></a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="column1">
+        <fieldset class="field1">
+          <img src="img/handshake.png" />
+          <img src="img/location.png" />
+          <img src="img/qa.png" />
+          <img src="img/television.png" />
+        </fieldset>
+        <div class="banpt">
+          <img src="img/ban-pt2.png" />
+        </div>
+        <fieldset class="field2">
+          <legend>Pengumuman</legend>
+          <div class="pengumuman1">
+            <img src="img/job.png" alt="" />
+            <a href="">Job Fair Institut Teknologi Del di Pekan Raya Sumatera Utara (PRSU) 2023</a>
+          </div>
+          <div class="pengumuman1">
+            <img src="img/pmb.png" alt="" />
+            <a href="">Informasi PMB Jalur Sertifikat Ujian Tulis Berbasis Komputer (Sertifikat UTBK) 2023/2024 & Jadwal Pelaksanaan Kegiatan</a>
+          </div>
+          <a href="Pengumuman.html" class="more">More -></a>
+        </fieldset>
+        <fieldset class="field3">
+          <legend>Links</legend>
+          <br />
+          <a href="">Sistem Informasi Akademik</a><br /><br />
+          <a href="">Sistem Informasi Perpustakaan</a><br /><br />
+          <a href="">Penerimaan Mahasiswa Baru</a><br /><br />
+          <a href="">Beasiswa IT Del</a><br /><br />
+          <a href="">Ikatan Alumni</a><br /><br />
+          <a href="">Testimonial</a><br /><br />
+          <a href="Lembaga.html">Lembaga</a><br />
+        </fieldset>
+      </div>
+      <div class="column2">
+        <div class="slider-container">
+          <div class="slide fade">
+            <img src="img/Plaza_IT_Del.jpg" alt="Slide 1" />
+            <figcaption>
+              <h2>Grand Opening Semester Gasal Tahun Ajaran 2023/2024 Institut Teknologi Del</h2>
+              <p>
+                Pada Hari Jumat, 25 Agustus 2023 Institut Teknologi Del mengadakan Kegiatan Grand Opening Semester Gasal Tahun Ajaran 2023/2024 di Gedung Serba Guna Yayasan Del. Kegiatan ini dihadiri oleh seluruh mahasiswa aktif IT Del,
+                Bapak dan Ibu Dosen staf IT Del, dan dibuka langsung oleh Bapak Rektor IT Del, Dr. Arnaldo Marulitua Sinaga, ST., M.InfoTech. Pada kesempatan ini, Bapak Arnaldo Sinaga menyampaikan Selamat dan semangat memasuki semester
+                baru, dan selamat datang kepada Mahasiswa baru IT Del. “ Kita sudah kedatangan keluarga baru, mahasiswa baru, semoga cepat beradaptasi dan mari kita rangkul. Saya berharap, kehidupan kampus kita terus baik dan semakin
+                membaik dengan adanya kolaborasi yang terjadi. Selamat dan semangat dalam menjalani semester Gasal ini, mari melakukan hal-hal yang mengarah ke yang lebih baik” Ujar Beliau.
+              </p>
+            </figcaption>
+          </div>
+          <div class="slide fade">
+            <img src="img/itdel.jpg" alt="Slide 2" />
+            <figcaption>
+              <h2>Pengukuhan 483 Mahasiswa IT Del Angkatan XXIII dan Dies Natalis ke XXII</h2>
+              <p>
+                Sitoluama, 22 September 2023 Institut Teknologi Del menyelenggarakan Acara Pengukuhan Mahasiswa Baru Angkatan XXIII dan Dies Natalis ke XXII. Kegiatan ini dihadiri oleh Ketua Pembina Yayasan Del, Bapak Luhut Binsar
+                Pandjaitan dan Ibu Devi Pandjaitan, Ketua Pengurus Yayasan Del, Ibu Intan Simanjuntak, Rektor IT Del Bapak Dr. Arnaldo Marulitua Sinaga, S.T., M.InfoTech, Senat akademik Prof. Roberd Saragih, Ketua supervisor Habibie Center
+                Ilham Akbar Habibie, Dirjen Kekayaan Negara Rionald Silaban, CEO PT. Privy Marshall Pribadi, Wakil Ketua CNGR Internasional Fu Peiwen, bersama orang tua mahasiswa dan para undangan lainnya. Kegiatan ini dilaksanakan di
+                Gedung Serba Guna Yayasan Del.
+              </p>
+            </figcaption>
+          </div>
+          <div class="slide fade">
+            <img src="img/wisuda2.jpg" alt="Slide 3" />
+            <figcaption>
+              <h2>Wisuda 398 Lulusan Institut Teknologi Del</h2>
+              <p>
+                Pada Hari Sabtu 23 September 2023, Institut Teknologi Del melaksanakan Wisuda untuk 398 Mahasiswa Sarjana dan Diploma. Turut hadir Bapak Dr. Honoris Causa Ir. Airlangga Hartarto, MBA, MMT (Menteri Koordinator Bidang
+                Perekonomian Republik Indonesia), Bapak Rionald Silaban (Direktorat Jendral Kekayaan Negara), Bapak Jend. TNI (Purn.) Luhut Binsar Pandjaitan, M.P.A (Ketua Pembina Yayasan Del), Ibu Intan Simanjuntak (Ketua Pengurus Yayasan
+                Del), dan tamu undangan lainnya. Kegiatan Wisuda ini dilaksanakan di Gedung Serba Guna Yayasan Del dengan tema “Fostering Collaboration and Innovation towards Research Excellence”.
+              </p>
+            </figcaption>
+          </div>
+        </div>
+        <fieldset class="berita">
+          <legend>Berita Terkini</legend>
+          <div class="container3">
+            <div class="columns1">
+              <img src="img/gibran.png" alt="" />
+            </div>
+            <div class="columns2">
+              <a href="">Bapak Gibran Rakabuming Raka Beri Kuliah Umum kepada Mahasiswa IT Del terkait “Pemimpin Milenial”</a>
+              <p>
+                Pada Hari Sabtu, 18 November 2023 Institut Teknologi Del menerima kunjungan Bapak Gibran Rakabuming Raka, sekaligus menjadi pembicara pada Kuliah Umum dengan topik “Pemimpin Milenial” kepada Mahasiswa/i Institut Teknologi
+                Del. Kunjungan ini disambut baik oleh Bapak Dr. Arnaldo Marulitua Sinaga, ST., M.InfoTech. (Rektor IT Del), Bapak dan Ibu Wakil Rektor dan Dosen IT Del dan mahasiswa/i IT Del juga siswa SMA Unggul Del. Dalam kunjungan ini
+                turut hadir Ibu Selvi Ananda, dan Bapak Bobby Nasution (Wali Kota Medan).
+              </p>
+            </div>
+          </div>
+          <div class="container3">
+            <div class="columns1">
+              <img src="img/gibran.png" alt="" />
+            </div>
+            <div class="columns2">
+              <a href="">Bapak Gibran Rakabuming Raka Beri Kuliah Umum kepada Mahasiswa IT Del terkait “Pemimpin Milenial”</a>
+              <p>
+                Pada Hari Sabtu, 18 November 2023 Institut Teknologi Del menerima kunjungan Bapak Gibran Rakabuming Raka, sekaligus menjadi pembicara pada Kuliah Umum dengan topik “Pemimpin Milenial” kepada Mahasiswa/i Institut Teknologi
+                Del. Kunjungan ini disambut baik oleh Bapak Dr. Arnaldo Marulitua Sinaga, ST., M.InfoTech. (Rektor IT Del), Bapak dan Ibu Wakil Rektor dan Dosen IT Del dan mahasiswa/i IT Del juga siswa SMA Unggul Del. Dalam kunjungan ini
+                turut hadir Ibu Selvi Ananda, dan Bapak Bobby Nasution (Wali Kota Medan).
+              </p>
+            </div>
+          </div>
+          <div class="container3">
+            <div class="columns1">
+              <img src="img/gibran.png" alt="" />
+            </div>
+            <div class="columns2">
+              <a href="">Bapak Gibran Rakabuming Raka Beri Kuliah Umum kepada Mahasiswa IT Del terkait “Pemimpin Milenial”</a>
+              <p>
+                Pada Hari Sabtu, 18 November 2023 Institut Teknologi Del menerima kunjungan Bapak Gibran Rakabuming Raka, sekaligus menjadi pembicara pada Kuliah Umum dengan topik “Pemimpin Milenial” kepada Mahasiswa/i Institut Teknologi
+                Del. Kunjungan ini disambut baik oleh Bapak Dr. Arnaldo Marulitua Sinaga, ST., M.InfoTech. (Rektor IT Del), Bapak dan Ibu Wakil Rektor dan Dosen IT Del dan mahasiswa/i IT Del juga siswa SMA Unggul Del. Dalam kunjungan ini
+                turut hadir Ibu Selvi Ananda, dan Bapak Bobby Nasution (Wali Kota Medan).
+              </p>
+            </div>
+          </div>
+          <div class="container3">
+            <div class="columns1">
+              <img src="img/gibran.png" alt="" />
+            </div>
+            <div class="columns2">
+              <a href="">Bapak Gibran Rakabuming Raka Beri Kuliah Umum kepada Mahasiswa IT Del terkait “Pemimpin Milenial”</a>
+              <p>
+                Pada Hari Sabtu, 18 November 2023 Institut Teknologi Del menerima kunjungan Bapak Gibran Rakabuming Raka, sekaligus menjadi pembicara pada Kuliah Umum dengan topik “Pemimpin Milenial” kepada Mahasiswa/i Institut Teknologi
+                Del. Kunjungan ini disambut baik oleh Bapak Dr. Arnaldo Marulitua Sinaga, ST., M.InfoTech. (Rektor IT Del), Bapak dan Ibu Wakil Rektor dan Dosen IT Del dan mahasiswa/i IT Del juga siswa SMA Unggul Del. Dalam kunjungan ini
+                turut hadir Ibu Selvi Ananda, dan Bapak Bobby Nasution (Wali Kota Medan).
+              </p>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+    <footer class="footer1">
+      <div class="container2">
+        <div class="columnn1">
+          <h2>Contact Us</h2>
+          <p>
+            Institut Teknologi Del <br />Jl. Sisingamangaraja, Sitoluama Laguboti, Samosir<br />
+            Sumatera Utara, Indonesia <br />Kode Pos: 22381 <br />Telp: +62 632 331234 <br />Fax: +62 632 331116 <br /><br />Website: http://www.del.ac.id <br />Email: info@del.ac.id <br />Karir: karir@del.ac.id
+          </p>
+        </div>
+        <div class="columnn2">
+          <h2>Latest Tweets</h2>
+          <p>No Twitter Messages</p>
+          <li><i class="fab fa-twitter"></i>&nbsp;&nbsp;Twitter</li>
+        </div>
+        <div class="columnn3">
+          <h2>Find Us On</h2>
+          <ul>
+            <li><i class="fab fa-facebook"></i>&nbsp;&nbsp;Facebook</li>
+            <li><i class="fab fa-twitter"></i>&nbsp;&nbsp;Twitter</li>
+            <li><i class="fab fa-youtube"></i>&nbsp;&nbsp;Youtube</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer2">
+      <p>Copyright SDI-IT Del © 2023 Institut Teknologi Del. All Rights Reserved</p>
+    </footer>
+    <script src="home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:300,400,500,700">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        margin-left: 50px;
+        margin-top: 20px;
+      }
+
+      .logo {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+      }
+
+      .title h1 {
+        margin: 0;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+      }
+
+      .title h2 {
+        margin: 0;
+        font-style: sans-serif;
+        font-size: smaller;
+        font-weight: lighter;
+      }
+
+      .search-form {
+        display: flex;
+        align-items: center;
+        padding: 4px 8px;
+        border-radius: 4px;
+        margin-left: auto;
+        margin-right: 40px;
+      }
+
+      .search-form input[type='text'] {
+        color: #000;
+        padding: 4px 8px;
+        border-radius: 4px;
+        outline: none;
+      }
+      .search-form a {
+        font-size: larger;
+      }
+
+      .search-form button[type='submit'] {
+        background-color: #ffc107;
+        color: #000;
+        padding: 4px 8px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 4px;
+      }
+
+      .search-form button[type='submit']:hover {
+        background-color: #e6b100;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .navbar a:hover {
+        background: #ddd;
+        color: black;
+      }
+      .linknav {
+        margin-left: 5em;
+      }
+      .navbar {
+        overflow: hidden;
+        background-color: #351c75;
+        margin-bottom: 20px;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        text-decoration: none;
+        position: relative;
+      }
+
+      .navbar a:hover {
+        background: #ddd;
+        color: black;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .navbar a:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown-arrow::after {
+        content: '\25BC';
+        font-size: 10px;
+        margin-left: 5px;
+      }
+      .container2 {
+        display: flex;
+      }
+      .columnn1 {
+        margin-left: 5em;
+      }
+      .columnn2 {
+        margin-left: 13em;
+      }
+      .columnn3 {
+        flex-direction: column;
+        margin-left: 15em;
+      }
+      .columnn3 li {
+        padding-top: 10px;
+        list-style: none;
+      }
+      .container a {
+        font-family: sans-serif;
+        font-weight: bold;
+      }
+      .title1 h1 {
+        padding: 30px;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+      }
+      .title1 hr {
+        width: 50%;
+        height: 10px;
+        border: 0;
+        box-shadow: 0 10px 10px -10px #8c8c8c inset;
+      }
+      .cardfut hr{
+        height: 10px;
+        border: 0;
+        box-shadow: 0 10px 10px -10px #8c8c8c inset;
+      }
+      .ikon {
+        margin-right: 10px;
+      }
+      .ikon i {
+        width: 20px;
+      }
+      .search-form a {
+        margin-right: 15px;
+      }
+      .footer1 {
+        margin-top: 3em;
+        height: 20em;
+        background-color: #351c75;
+        color: #fff;
+        padding: 20px;
+      }
+      .footer1 h2 {
+        font-weight: bolder;
+        font-size: 25px;
+      }
+      .footer1 p {
+        font-size: smaller;
+        opacity: 0.7;
+      }
+      .footer2 {
+        height: 40px;
+        color: #fff;
+        text-align: center;
+      }
+      .footer2 p {
+        color: #000;
+      }
+      h1, h2, h3 {
+  font-family: Raleway, Helvetica, sans-serif;
+}
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.padded {
+  padding: 100px 0;
+}
+.wrapper-grey {
+  background: white;
+}
+.avatar {
+  width: 30px;
+  border-radius: 50%;
+}
+.avatar-bordered {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  border: white 1px solid;
+}
+.avatar-large {
+  width: 50px;
+}
+.banner {
+  color: white;
+  margin-top: 30px;
+  background-size: cover !important;
+  display: flex;
+  justify-content: center;
+}
+.banner h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+.banner p {
+  font-size: 25px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.8);
+
+} 
+
+.card {
+  height: 250px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  color: white;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.card-description h2 {
+  font-size: 22px;
+}
+.card-description p {
+  font-size: 15px;
+}
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index:2;
+  background: black;
+  opacity: 0;
+}
+.card-link:hover{
+  opacity: 0.1;
+}
+.features img {
+  width: 100px;
+}
+.features h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.features p {
+  font-size: 15px;
+  font-weight: lighter;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="img/logodedl.png" alt="Logo" class="logo" />
+      <div class="title">
+        <h1>Institut Teknologi Del</h1>
+        <h2>MarTuhan, Marroha, Marbisuk</h2>
+      </div>
+
+      <form class="search-form">
+        <a href="Dashboard.html">Home</a>
+        <a href="Pengumuman.html">Pengumuman</a>
+        <div class="ikon">
+          <i class="fab fa-mail-forward"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+        <input type="text" placeholder="Pencarian" />
+        <button type="submit">Cari</button>
+      </form>
+    </header>
+    <nav class="navbar">
+      <div class="linknav">
+        <a href="#">Tentang Del <span class="dropdown-arrow"></span></a>
+        <a href="ProgramPendidikan.html">Program Pendidikan <span class="dropdown-arrow"></span></a>
+        <div class="dropdown-content">
+          <a href="#">Sejarah</a>
+          <a href="#">Visi dan Misi</a>
+        </div>
+        <a href="#">Sivitas <span class="dropdown-arrow"></span></a>
+        <div class="dropdown-content">
+          <a href="#">Workshop</a>
+          <a href="#">Seminar</a>
+        </div>
+        <a href="Fasilitas.html">Fasilitas <span class="dropdown-arrow"></span></a>
+        <div class="dropdown-content">
+          <a href="#">Terbaru</a>
+          <a href="#">Arsip</a>
+        </div>
+        <a href="#">Kontak <span class="dropdown-arrow"></span></a>
+      </div>
+    </nav>
+    <div class="title1">
+      <h1>FASILITAS</h1>
+      <hr />
+    </div>
+    <div class=" wrapper-grey padded" >
+        <h2 class="text-center">Ruang Terbuka</h2>
+        <div class="banner fasilitas container">
+          <div class="col-xs-12 col-sm-4">
+              <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('img/laphijau.jpg');">
+                <div class="card-category">Ruang Terbuka</div>
+                <div class="card-description">
+                  <h2>Lapangan Hijau</h2>
+                  <p>Dapat melakukan berbagai acara yang berkaitan dengan olahraga</p>
+                </div>
+                <img class="card-user avatar avatar-large" src="https://github.com/lewagon/bootstrap-challenges/blob/master/11-Airbnb-search-form/images/anne.jpg?raw=true">
+                <a class="card-link" href="#" ></a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('img/eh.jpg');">
+                <div class="card-category">Ruang Terbuka</div>
+                <div class="card-description">
+                  <h2>Entrance Hall</h2>
+                  <p>Tersedia tempat untuk belajar mandiri dan dapat juga digunakan untuk menyambut tamu IT Del </p>
+                </div>
+                <img class="card-user avatar avatar-large" src="https://github.com/lewagon/bootstrap-challenges/blob/master/11-Airbnb-search-form/images/anne.jpg?raw=true">
+                <a class="card-link" href="#" ></a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('img/ot.avif');">
+                  <div class="card-category">Ruang Terbuka</div>
+                  <div class="card-description">
+                    <h2>Open Theater</h2>
+                    <p>Digunakan mahasiswa sebagai tempat untuk menenangkan diri dan juga untuk berbagai acara besar yang diadakan IT Del</p>
+                  </div>
+                  <img class="card-user avatar avatar-large" src="https://github.com/lewagon/bootstrap-challenges/blob/master/11-Airbnb-search-form/images/anne.jpg?raw=true">
+                  <a class="card-link" href="#" ></a>
+                </div>
+              </div>
+          </div>
+        <h2 class="text-center">Laboratorium</h2>
+        <div class="banner fasilitas container">
+          <div class="col-xs-12 col-sm-4">
+              <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('img/labkomm.jpeg');">
+                <div class="card-category">Laboratorium</div>
+                <div class="card-description">
+                  <h2>Komputer</h2>
+                  <p>Terdiri atas Komputer Desktop, Laptop, AC, projector, printer, dan perangkat lain</p>
+                </div>
+                <img class="card-user avatar avatar-large" src="https://github.com/lewagon/bootstrap-challenges/blob/master/11-Airbnb-search-form/images/anne.jpg?raw=true">
+                <a class="card-link" href="#" ></a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('img/labbhs.jpeg');">
+                <div class="card-category">Laboratorium</div>
+                <div class="card-description">
+                  <h2>Bahasa</h2>
+                  <p>Terdiri ats 1 Unit PC yang dikhususkan dipakai oleh operator, Headphone sebanyak 10 buah, 1 buah infokus, Dilengkapi dengan meja dan kursi</p>
+                </div>
+                <img class="card-user avatar avatar-large" src="https://github.com/lewagon/bootstrap-challenges/blob/master/11-Airbnb-search-form/images/anne.jpg?raw=true">
+                <a class="card-link" href="#" ></a>
+              </div>
+            </div>
+
+          </div>
+          <h2 class="text-center">Akomodasi</h2>
+        <div class="banner fasilitas container">
+          <div class="col-xs-12 col-sm-4">
+              <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('img/rumahdosen.jpg');">
+                <div class="card-category">Akomodasi Dosen</div>
+                <div class="card-description">
+                  <h2>Rumah Dosen</h2>
+                  <p>Fasilitas yang disediakan untuk para dosen atau staff yang memilih untuk tinggal disekitar kampus</p>
+                </div>
+                <img class="card-user avatar avatar-large" src="https://github.com/lewagon/bootstrap-challenges/blob/master/11-Airbnb-search-form/images/anne.jpg?raw=true">
+                <a class="card-link" href="#" ></a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('img/asrama.jpg');">
+                <div class="card-category">Akomodasi Mahasiswa</div>
+                <div class="card-description">
+                  <h2>Asrama Mahasiswa</h2>
+                  <p>Fasilitas yang disediakan untuk para mahasiswa IT Del. Terdapat 8 gedung asrama putra dan putri</p>
+                </div>
+                <img class="card-user avatar avatar-large" src="https://github.com/lewagon/bootstrap-challenges/blob/master/11-Airbnb-search-form/images/anne.jpg?raw=true">
+                <a class="card-link" href="#" ></a>
+              </div>
+            </div>
+
+          </div>
+          <h2 class="text-center">Perpustakaan & Klinik</h2>
+        <div class="banner fasilitas container">
+          <div class="col-xs-12 col-sm-4">
+              <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('img/perpus.jpg');">
+                <div class="card-category"></div>
+                <div class="card-description">
+                  <h2>Perpustakaan</h2>
+                  <p>Terdiri atas Komputer Desktop, Laptop, AC, projector, printer, dan perangkat lain</p>
+                </div>
+                <img class="card-user avatar avatar-large" src="https://github.com/lewagon/bootstrap-challenges/blob/master/11-Airbnb-search-form/images/anne.jpg?raw=true">
+                <a class="card-link" href="#" ></a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('img/klinik.jpg');">
+                <div class="card-category"></div>
+                <div class="card-description">
+                  <h2>Klinik</h2>
+                  <p>Terdiri ats 1 Unit PC yang dikhususkan dipakai oleh operator, Headphone sebanyak 10 buah, 1 buah infokus, Dilengkapi dengan meja dan kursi</p>
+                </div>
+                <img class="card-user avatar avatar-large" src="https://github.com/lewagon/bootstrap-challenges/blob/master/11-Airbnb-search-form/images/anne.jpg?raw=true">
+                <a class="card-link" href="#" ></a>
+              </div>
+            </div>
+
+          </div>
+          </div>
+        </div>
+      </div>
+    <br />
+
+    <br />
+    <br /><br /><br />
+    <div class="cardfut">
+    <hr>
+    <div class="card2 text-center">
+      <div class="card-body">
+        <h5 class="card-title" style="color: #000;">Berita Terkini</h5>
+        <p class="card-text" style="color: #000;">Klik tombol berikut untuk membaca berita seputar IT Del</p>
+        <a href="#" class="btn btn-primary" style="background-color: #351c75">Berita Terkini</a>
+      </div>
+    </div><hr></div>
+    <footer class="footer1">
+      <div class="container2">
+        <div class="columnn1">
+          <h2>Contact Us</h2>
+          <p>
+            Institut Teknologi Del <br />Jl. Sisingamangaraja, Sitoluama Laguboti, Samosir<br />
+            Sumatera Utara, Indonesia <br />Kode Pos: 22381 <br />Telp: +62 632 331234 <br />Fax: +62 632 331116 <br /><br />Website: http://www.del.ac.id <br />Email: info@del.ac.id <br />Karir: karir@del.ac.id
+          </p>
+        </div>
+        <div class="columnn2">
+          <h2>Latest Tweets</h2>
+          <p>No Twitter Messages</p>
+          <li><i class="fab fa-twitter"></i>&nbsp;&nbsp;Twitter</li>
+        </div>
+        <div class="columnn3">
+          <h2>Find Us On</h2>
+          <ul>
+            <li><i class="fab fa-facebook"></i>&nbsp;&nbsp;Facebook</li>
+            <li><i class="fab fa-twitter"></i>&nbsp;&nbsp;Twitter</li>
+            <li><i class="fab fa-youtube"></i>&nbsp;&nbsp;Youtube</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer2">
+      <p>Copyright SDI-IT Del © 2023 Institut Teknologi Del. All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
